@@ -5,17 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A08C6A"
+    android:background="#FAEBD7"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/inputNoTujuan"
-        android:layout_width="327dp"
-        android:layout_height="30dp"
+        android:layout_width="234dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:fontFamily="@font/fugazoneregular"
         android:inputType="text"
-        android:text="Selamat Datang DI Project Akhir Gadoca"
+        android:text="Selamat Datang DI Project OREO"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,8 +29,8 @@
         android:id="@+id/btnMasuk"
         android:layout_width="265dp"
         android:layout_height="47dp"
-        android:backgroundTint="#352C12"
-        android:text="Login"
+        android:backgroundTint="#248C27"
+        android:text="My Project"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,12 +42,22 @@
         android:id="@+id/imageView2"
         android:layout_width="348dp"
         android:layout_height="335dp"
-        android:src="@drawable/gadoca"
+        android:src="@drawable/logooreo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.084" />
 
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="124dp"
+        android:src="@drawable/iconoreo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
 </androidx.constraintlayout.widget.ConstraintLayout>
