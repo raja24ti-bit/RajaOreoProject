@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.mrm_oreo.Gadoca.MenuActivity
+import com.example.mrm_oreo.Gadoca.WebViewActivity
 import com.example.mrm_oreo.databinding.ActivityMainBinding
 import com.example.mrm_oreo.databinding.ActivityMyProjectBinding
 
@@ -26,6 +28,7 @@ class MyProject : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
             title = "Activity Project"
@@ -35,6 +38,14 @@ class MyProject : AppCompatActivity() {
         }
         binding.btnLanjut.setOnClickListener {
             val i = Intent(this, MenuActivity::class.java)
+            startActivity(i)
+        }
+        binding.btnWebView.setOnClickListener {
+            val i = Intent(this, WebViewActivity::class.java)
+            startActivity(i)
+        }
+        binding.btnProfil.setOnClickListener {
+            val i = Intent(this, ProfilActivity::class.java)
             startActivity(i)
         }
     }

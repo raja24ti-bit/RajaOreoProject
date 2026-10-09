@@ -22,6 +22,7 @@
 
 
     <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="353dp"
         android:layout_height="414dp"
         android:src="@drawable/halamangadoca"
@@ -50,14 +51,39 @@
         android:id="@+id/btnLanjut"
         android:layout_width="237dp"
         android:layout_height="48dp"
-        android:text="Next To Menu"
         android:backgroundTint="#2F2922"
+        android:text="Next To Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963"
+        app:layout_constraintVertical_bias="0.703"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnWebView"
+        android:layout_width="234dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#312C20"
+        android:text="WebViewGadoca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Button
+        android:id="@+id/btnProfil"
+        android:layout_width="234dp"
+        android:layout_height="46dp"
+        android:text="Profil Developer"
+        android:backgroundTint="#2C230F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@ class MenuActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
             title = "Menu Project"
-            subtitle = "Ini adalah Halaman Menu"
+            subtitle = "Ini adalah Halaman Menu Gadoca"
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }

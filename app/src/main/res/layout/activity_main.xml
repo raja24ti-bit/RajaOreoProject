@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAEBD7"
+    android:background="#59462B"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,8 +15,8 @@
         android:ems="10"
         android:fontFamily="@font/fugazoneregular"
         android:inputType="text"
-        android:text="Selamat Datang DI Project OREO"
-        android:textColor="@color/black"
+        android:text="Selamat Datang Di Project Gadoca"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -29,35 +29,52 @@
         android:id="@+id/btnMasuk"
         android:layout_width="265dp"
         android:layout_height="47dp"
-        android:backgroundTint="#248C27"
+        android:backgroundTint="#332B15"
         android:text="My Project"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716"
+        app:layout_constraintVertical_bias="0.79"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="348dp"
         android:layout_height="335dp"
-        android:src="@drawable/logooreo"
+        android:src="@drawable/gadoca"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.183" />
 
-    <ImageView
-        android:layout_width="85dp"
-        android:layout_height="124dp"
-        android:src="@drawable/iconoreo"
+    <EditText
+        android:id="@+id/idNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintVertical_bias="0.552" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657" />
 </androidx.constraintlayout.widget.ConstraintLayout>
