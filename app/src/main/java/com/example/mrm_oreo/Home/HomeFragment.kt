@@ -7,8 +7,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import com.example.mrm_oreo.BaseActivity
 import com.example.mrm_oreo.MyProject
 import com.example.mrm_oreo.R
+import com.example.mrm_oreo.VerifikasiActivity
 import com.example.mrm_oreo.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
@@ -35,26 +39,23 @@ class HomeFragment : Fragment() {
             startActivity(i)
         }
         binding.btnMasuk.setOnClickListener {
-            val username = binding.idNama.text.toString()
-            val password = binding.Password.text.toString()
+            val user = binding.idNama.text.toString()
+            val pass = binding.Password.text.toString()
 
-            val editor = sharedPref.edit()
-            editor.putBoolean("isLogin", true)
-            editor.putString("username",username)
-            editor.apply()
-
-            if (username == password){
-                val i = Intent(requireContext(), MyProject::class.java)
-                startActivity(i)
-                    requireActivity().finish()
-
-            }else{
-                MaterialAlertDialogBuilder(requireContext())
-                    .setTitle("Opppp")
-                    .setMessage("Username Dan Password Salah")
+            if (user.isNotEmpty() && user == pass) {
+                val editor = sharedPref.edit()
+                editor.putBoolean("isLogin", true)
+                editor.putString("username", user)
+                editor.apply()
+                startActivity(Intent(requireContext(), BaseActivity::class.java))
+                requireActivity().finish()
+            } else {
+                AlertDialog.Builder(requireContext())
+                    .setTitle("Login Gagal")
+                    .setMessage("Silahkan coba lagi")
+                    .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
                     .show()
             }
         }
-
     }
 }
