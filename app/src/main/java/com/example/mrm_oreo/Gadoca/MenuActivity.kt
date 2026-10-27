@@ -8,28 +8,36 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.RecyclerView
+import com.example.mrm_oreo.ItemMenu
 import com.example.mrm_oreo.R
 import com.example.mrm_oreo.databinding.ActivityMenuBinding
 
 class MenuActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMenuBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityMenuBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_menu);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        setSupportActionBar(binding.toolbar)
-        supportActionBar?.apply {
-            title = "Menu Project"
-            subtitle = "Ini adalah Halaman Menu Gadoca"
-            setDisplayHomeAsUpEnabled(true)
-            setDisplayShowHomeEnabled(true)
-        }
+
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+
+        val items = listOf(
+            R.drawable.menugadoca1,
+            R.drawable.menugadoca2,
+            R.drawable.menugadoca3,
+            R.drawable.menugadoca4,
+            R.drawable.menugadoca5,
+            R.drawable.menugadoca6,
+            R.drawable.menugadoca7,
+            R.drawable.menugadoca8
+        )
+
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
