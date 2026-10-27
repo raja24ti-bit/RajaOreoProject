@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifikasiActivity">
+
+    <TextView
+        android:id="@+id/tvJudulOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Verifikasi OTP"
+        android:textColor="#4B3621"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPetunjukOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Masukkan nomor handphone yang kamu gunakan saat registrasi sebagai kode OTP."
+        android:textColor="#806B58"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/tvJudulOtp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:hint="Kode OTP"
+        android:inputType="number"
+        android:maxLength="15"
+        android:padding="12dp"
+        android:backgroundTint="#9A7B5B"
+        app:layout_constraintTop_toBottomOf="@id/tvPetunjukOtp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerifikasi"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#59462B"
+        android:text="Verifikasi"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/etOtp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
