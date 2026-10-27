@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -31,23 +32,21 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
         binding.btnMasuk.setOnClickListener {
-            val username = binding.idNama.text.toString()
-            val password = binding.Password.text.toString()
+            val user = binding.idNama.text.toString()
+            val pass = binding.Password.text.toString()
 
-            val editor = sharedPref.edit()
-            editor.putBoolean("isLogin", true)
-            editor.putString("username",username)
-            editor.apply()
-
-            if (username == password){
-                val i = Intent(this, MyProject::class.java)
-                startActivity(i)
+            if (user.isNotEmpty() && user == pass) {
+                val editor = sharedPref.edit()
+                editor.putBoolean("isLogin", true)
+                editor.putString("username", user)
+                editor.apply()
+                startActivity(Intent(this, BaseActivity::class.java))
                 finish()
-
-            }else{
-                MaterialAlertDialogBuilder(this)
-                    .setTitle("Opppp")
-                    .setMessage("Username Dan Password Salah")
+            } else {
+                AlertDialog.Builder(this)
+                    .setTitle("Login Gagal")
+                    .setMessage("Silahkan coba lagi")
+                    .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
                     .show()
             }
         }
