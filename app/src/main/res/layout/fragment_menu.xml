@@ -1,288 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#7E6D4B"
+    android:orientation="vertical"
+    android:background="#FDFDFD"
     tools:context=".Menu.MenuFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <ImageView
-        android:id="@+id/gambarmenu"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_margin="8dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/menugadoca1"
-        android:contentDescription="Gambar menu" />
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu"
-        android:layout_alignTop="@id/gambarmenu"
-        android:layout_marginStart="10dp"
-        android:text="Nasi Ayam Geprek"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/keterangan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu"
-        android:layout_below="@id/name"
-        android:layout_marginStart="10dp"
-        android:text="	Ayam crispy dengan sambal pedas yang menggugah selera."
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
-
-    <!-- Menu 2 -->
-    <ImageView
-        android:id="@+id/gambarmenu2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/gambarmenu"
-        android:layout_margin="8dp"
-        android:src="@drawable/menugadoca2"
-        android:scaleType="centerCrop"
-        android:contentDescription="Menu 2" />
-
-    <TextView
-        android:id="@+id/name2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu2"
-        android:layout_alignTop="@id/gambarmenu2"
-        android:layout_marginStart="10dp"
-        android:text="Nasi Ayam penyet"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/keterangan2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu2"
-        android:layout_below="@id/name2"
-        android:layout_marginStart="10dp"
-        android:text="Ayam gurih dengan sambal nikmat dan lalapan segar."
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
-
-    <!-- Menu 3 -->
-
-    <ImageView
-        android:id="@+id/gambarmenu3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/gambarmenu2"
-        android:layout_margin="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="Menu 3"
-        android:scaleType="centerCrop"
-        android:src="@drawable/menugadoca3" />
-
-    <TextView
-        android:id="@+id/name3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu3"
-        android:layout_alignTop="@id/gambarmenu3"
-        android:layout_marginStart="10dp"
-        android:text="Pisang keju"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-
-    <TextView
-        android:id="@+id/keterangan3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu3"
-        android:layout_below="@id/name3"
-        android:layout_marginStart="10dp"
-        android:text="	Pisang renyah dengan taburan keju yang melimpah."
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
-
-    <!-- Menu 4 -->
-    <ImageView
-        android:id="@+id/gambarmenu4"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/gambarmenu3"
-        android:layout_margin="8dp"
-        android:src="@drawable/menugadoca4"
-        android:scaleType="centerCrop"
-        android:contentDescription="Menu 4" />
-
-    <TextView
-        android:id="@+id/name4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu4"
-        android:layout_alignTop="@id/gambarmenu4"
-        android:layout_marginStart="10dp"
-        android:text="Max Platter"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/keterangan4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu4"
-        android:layout_below="@id/name4"
-        android:layout_marginStart="10dp"
-        android:text="Kombinasi sosis, nugget, dan kentang goreng yang lezat."
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
-
-    <!-- Menu 5 -->
-    <ImageView
-        android:id="@+id/gambarmenu5"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/gambarmenu4"
-        android:layout_margin="8dp"
-        android:src="@drawable/menugadoca5"
-        android:scaleType="centerCrop"
-        android:contentDescription="Menu 5" />
-
-    <TextView
-        android:id="@+id/name5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu5"
-        android:layout_alignTop="@id/gambarmenu5"
-        android:layout_marginStart="10dp"
-        android:text="Butterscotch"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/keterangan5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu5"
-        android:layout_below="@id/name5"
-        android:layout_marginStart="10dp"
-        android:text="rasa manis yang hangat, kaya rasa mentega (creamy) "
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
-
-    <!-- Menu 6 -->
-    <ImageView
-        android:id="@+id/gambarmenu6"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/gambarmenu5"
-        android:layout_margin="8dp"
-        android:src="@drawable/menugadoca6"
-        android:scaleType="centerCrop"
-        android:contentDescription="Menu 6" />
-
-    <TextView
-        android:id="@+id/name6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu6"
-        android:layout_alignTop="@id/gambarmenu6"
-        android:layout_marginStart="10dp"
-        android:text="FMBS"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/keterangan6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu6"
-        android:layout_below="@id/name6"
-        android:layout_marginStart="10dp"
-        android:text="Perpaduan kopi dan susu dengan rasa creamy yang bikin ketagihan."
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
-
-    <!-- Menu 7 -->
-    <ImageView
-        android:id="@+id/gambarmenu7"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/gambarmenu6"
-        android:layout_margin="8dp"
-        android:src="@drawable/menugadoca7"
-        android:scaleType="centerCrop"
-        android:contentDescription="Menu 7" />
-
-    <TextView
-        android:id="@+id/name7"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu7"
-        android:layout_alignTop="@id/gambarmenu7"
-        android:layout_marginStart="10dp"
-        android:text="Nasi Talua Barendo"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/keterangan7"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/listMessageItems"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu7"
-        android:layout_below="@id/name7"
-        android:layout_marginStart="10dp"
-        android:text="Telur barendo renyah dengan cita rasa gurih, cocok dinikmati bersama nasi hangat."
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
-
-
-    <!-- Menu 8 -->
-    <ImageView
-        android:id="@+id/gambarmenu8"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/gambarmenu7"
-        android:layout_margin="8dp"
-        android:src="@drawable/menugadoca8"
-        android:scaleType="centerCrop"
-        android:contentDescription="Menu 8" />
-
-    <TextView
-        android:id="@+id/name8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu8"
-        android:layout_alignTop="@id/gambarmenu8"
-        android:layout_marginStart="10dp"
-        android:text="Risol Mayo"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/keterangan8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gambarmenu8"
-        android:layout_below="@id/name8"
-        android:layout_marginStart="10dp"
-        android:text="Risol renyah berisi mayones creamy yang gurih dan lezat untuk camilan."
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
-
-
-</RelativeLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/tulisanbaru"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp" />
+</LinearLayout>

@@ -33,29 +33,5 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val sharedPref = requireContext().getSharedPreferences("user_pref", MODE_PRIVATE)
-
-        binding.btnMasuk.setOnClickListener {
-            val i = Intent(requireContext(), MyProject::class.java)
-            startActivity(i)
-        }
-        binding.btnMasuk.setOnClickListener {
-            val user = binding.idNama.text.toString()
-            val pass = binding.Password.text.toString()
-
-            if (user.isNotEmpty() && user == pass) {
-                val editor = sharedPref.edit()
-                editor.putBoolean("isLogin", true)
-                editor.putString("username", user)
-                editor.apply()
-                startActivity(Intent(requireContext(), BaseActivity::class.java))
-                requireActivity().finish()
-            } else {
-                AlertDialog.Builder(requireContext())
-                    .setTitle("Login Gagal")
-                    .setMessage("Silahkan coba lagi")
-                    .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
-                    .show()
-            }
-        }
     }
 }
