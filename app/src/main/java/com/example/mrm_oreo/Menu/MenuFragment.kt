@@ -16,14 +16,14 @@ class MenuFragment : Fragment() {
     private val messageList = listOf(
         MessageModel("Ayam Geprek", "Pedasnya mantap!", R.drawable.menugadoca1),
         MessageModel("Ayam Rica Rica", "Favorit banget!", R.drawable.menugadoca2),
-        MessageModel("Nasi Talua Bardendo", "Wajib dicoba!", R.drawable.menugadoca3),
-        MessageModel("Mie Goreng Gadoca", "Enak dan gurih!", R.drawable.menugadoca4),
-        MessageModel("Cireng Gadoca", "Camilan favorit!", R.drawable.menugadoca4),
-        MessageModel("Pisang Keju Karamel", "Manisnya pas!", R.drawable.menugadoca5),
-        MessageModel("Gentang Goreng", "Renyah banget!", R.drawable.menugadoca6),
-        MessageModel("Risol Coklat Keju", "Lumer di mulut!", R.drawable.menugadoca7),
-        MessageModel("Risol Mayo", "Creamy dan lezat!", R.drawable.menugadoca8),
-        MessageModel("Mix Platter", "Cocok buat sharing!", R.drawable.oreo)
+        MessageModel("Pisang Keju Karamel", "Manisnya pas!", R.drawable.menugadoca3),
+        MessageModel("Mix Platter", "Cocok buat sharing!", R.drawable.menugadoca4),
+        MessageModel("Butterscotch", "Creamy dan bikin nagih!", R.drawable.menugadoca5),
+        MessageModel("Vanila Oreo", "Manisnya bikin happy!", R.drawable.menugadoca6),
+        MessageModel("Nasi Talua Barendo", "Gurihnya bikin ketagihan!", R.drawable.menugadoca7),
+        MessageModel("Risol Mayo", "Lumer di mulut!", R.drawable.menugadoca8),
+        MessageModel("Enoki Jamur Krispy", "Renyah di setiap gigitan!", R.drawable.menugadoca9),
+        MessageModel("Nugget Kanzler", "Enak buat teman santai!", R.drawable.menugadoca10)
     )
 
     override fun onCreateView(

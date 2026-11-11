@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mau Makan Apa Hari Ini?"
+            android:textColor="#30252B"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Pilih makanan favoritmu di Cafe Gadoca"
+            android:textColor="#88818F"
+            android:textSize="13sp"/>
+
+        <!-- SEARCH -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:background="#FFFFFF"
+            android:hint="Cari makanan..."
+            android:paddingHorizontal="15dp"
+            android:textSize="13sp"/>
+
+        <!-- CATEGORY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Kategori"
+            android:textColor="#30252B"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#684B9D"
+                    android:gravity="center"
+                    android:text="Semua"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="#E9E1F5"
+                    android:gravity="center"
+                    android:text="Makanan"
+                    android:textColor="#684B9D"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="#E9E1F5"
+                    android:gravity="center"
+                    android:text="Camilan"
+                    android:textColor="#684B9D"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- MENU TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Daftar Menu"
+            android:textColor="#30252B"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+
+        <!-- MENU 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:src="@drawable/menugadoca1"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayam Geprek"
+                    android:textColor="#30252B"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Pedasnya mantap!"
+                    android:textColor="#88818F"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/btnPesanGeprek"
+                    android:layout_width="115dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="7dp"
+                    android:backgroundTint="#684B9D"
+                    android:text="Pesan"
+                    android:textSize="11sp"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- MENU 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:src="@drawable/menugadoca2"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayam Rica Rica"
+                    android:textColor="#30252B"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Favorit banget!"
+                    android:textColor="#88818F"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/btnPesanRica"
+                    android:layout_width="115dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="7dp"
+                    android:backgroundTint="#684B9D"
+                    android:text="Pesan"
+                    android:textSize="11sp"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

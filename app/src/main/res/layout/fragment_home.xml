@@ -55,7 +55,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="22dp"
             android:background="#FFFFFF"
-            android:hint="🔍  Cari makanan favoritmu..."
+            android:hint="  Cari makanan favoritmu..."
             android:paddingHorizontal="15dp"
             android:textSize="13sp"
             android:singleLine="true"/>
